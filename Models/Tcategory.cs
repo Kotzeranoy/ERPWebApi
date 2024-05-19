@@ -26,4 +26,6 @@ public partial class Tcategory
     public virtual Temployee? Emp { get; set; }
 
     public virtual ICollection<Tmaterial> Tmaterials { get; set; } = new List<Tmaterial>();
+
+    public virtual ICollection<Tcategory> SubCategories { get; set; } = new List<Tcategory>();
 }

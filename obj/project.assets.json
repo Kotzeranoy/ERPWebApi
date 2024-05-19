@@ -4523,11 +4523,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Coding\\ERPWebApi\\ERPWebApi.csproj",
+      "projectUniqueName": "d:\\Coding\\ERPWebApi\\ERPWebApi.csproj",
       "projectName": "ERPWebApi",
-      "projectPath": "D:\\Coding\\ERPWebApi\\ERPWebApi.csproj",
+      "projectPath": "d:\\Coding\\ERPWebApi\\ERPWebApi.csproj",
       "packagesPath": "C:\\Users\\kotze\\.nuget\\packages\\",
-      "outputPath": "D:\\Coding\\ERPWebApi\\obj\\",
+      "outputPath": "d:\\Coding\\ERPWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -169,8 +169,14 @@ public partial class ErpdbconnectContext : DbContext
                 .HasConstraintName("FK_TBankPartner_TPartner");
         });
 
+
         modelBuilder.Entity<Tcategory>(entity =>
         {
+            entity.HasMany(c => c.SubCategories)
+                .WithOne()
+                .HasForeignKey(c => c.CatParent)
+                .OnDelete(DeleteBehavior.Restrict);
+
             entity.HasKey(e => e.CatCode);
 
             entity.ToTable("TCategory");
@@ -193,6 +199,7 @@ public partial class ErpdbconnectContext : DbContext
             entity.HasOne(d => d.Emp).WithMany(p => p.Tcategories)
                 .HasForeignKey(d => d.EmpId)
                 .HasConstraintName("FK_TCategory_TEmployee");
+
         });
 
         modelBuilder.Entity<TdeliveryNote>(entity =>
